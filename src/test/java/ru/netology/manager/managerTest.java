@@ -188,6 +188,3 @@ class managerTest {
         assertArrayEquals(expected, actual);
     }
 }
-
-
-
