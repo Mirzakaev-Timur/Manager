@@ -187,4 +187,17 @@ class managerTest {
 
         assertArrayEquals(expected, actual);
     }
+
+    @Test
+    void getFilmsLimit2and1Film (){
+        film first = new film(1, "Бладшот");
+
+        manager manager = new manager(2);
+        manager.save(first);
+
+        film[] expected = {first};
+        film[] actual = manager.getAll();
+
+        assertArrayEquals(expected, actual);
+    }
 }
